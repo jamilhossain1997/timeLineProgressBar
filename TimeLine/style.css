@@ -83,4 +83,41 @@
     padding: 0.01em 0 3em 2em;
     border-left: 1px solid #fe4747;
   }
+
+
+  .timeline-item {
+    margin-top: -0.3em;
+  }
+  .timeline-item time {
+    display: block;
+    float: left;
+    background-color: #ffebeb;
+    padding: 0.2em 0.4em;
+  }
+  .timeline-item > * {
+    margin: 1em 0;
+  }
+  .timeline-item .location {
+    clear: both;
+    font-size: 0.85em;
+    font-style: italic;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
   
